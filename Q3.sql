@@ -13,3 +13,19 @@ create procedure agecheck(in vid int , in v_name varchar(20) , in v_age int , IN
     //
 call agecheck(105,"micro", 17, "hampi",666,171);
    //  
++------------------+
+| msg              |
++------------------+
+| Age less than 18 |
++------------------+
+
+select * from voter;
++-----+--------+-------+-------------+----------+---------+
+| vid | v_name | v_age | v_address   | canti_id | cand_id |
++-----+--------+-------+-------------+----------+---------+
+| 100 | thomas |    33 | kerala      |      111 |     121 |
+| 101 | adison |    45 | bomby       |      222 |     131 |
+| 102 | marco  |    50 | vijayanagar |      333 |     141 |
+| 103 | boss   |    60 | gadaga      |      444 |     151 |
+| 104 | rama   |    25 | kampli      |      555 |     161 |
++-----+--------+-------+-------------+----------+---------+
